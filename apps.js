@@ -20,6 +20,25 @@
   	console.log(newRole);
   	var newStartDate = $("#employee-start-date").val().trim()
   	console.log(newStartDate);
-  	var newRate = $("#employee-rate").val().trim()
-  	console.log(newRate);
+  	var newRate = parseInt($("#employee-rate").val().trim())
+    console.log(newRate);
+    var newEmp = {
+      name: newName,
+      role: newRole,
+      start: newStartDate,
+      rate: newRate,
+      currentDate: firebase.database.ServerValue.TIMESTAMP
+    }
+  	database.ref().push({
+      employee: newEmp
+    })
+    // $("#formID").empty();
+ 
   });
+   database.ref().on("child_added", function (child) {
+    var tempName = child.val().employee.name;
+    var tempName = child.val().employee.name;
+    var tempName = child.val().employee.name;
+    var tempName = child.val().employee.name;
+
+  })
