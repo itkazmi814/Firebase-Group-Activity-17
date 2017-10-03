@@ -37,8 +37,21 @@
   });
    database.ref().on("child_added", function (child) {
     var tempName = child.val().employee.name;
-    var tempName = child.val().employee.name;
-    var tempName = child.val().employee.name;
-    var tempName = child.val().employee.name;
+    var tempRole = child.val().employee.role;
+    var tempStart = child.val().employee.start;
+    var tempRate = child.val().employee.rate;
+    var monthsWorked = moment(tempStart).format("YYYY,MM,DD");
+    console.log(moment(monthsWorked).fromNow());
+    
+   var newRow = $("<tr>");
+   var newNamediv = $("<td>").text(tempName);
+   newRow.append(newNamediv);
+   $("#info-table").append(newRow);
 
   })
+   
+   
+  
+ 
+
+
