@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Time Sheet </title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- CSS Link -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Firebase Link -->
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
+
+</head>
+
+<body>
+
+<section class="my-5 card mx-auto text-center">
+	<table id="info-table" class="table">
+		<tr>
+			<th>Employee Name</th>
+			<th>Role</th>
+			<th>Start Date</th>
+			<th>Months Worked</th>
+			<th>Monthly Rate</th>
+			<th>Total Billed</th>
+		</tr>
+		<tr>
+			<th scope="row"></th>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</section> 
+
+<section class="my-5 card mx-auto">
+	<form class="mx-auto">
+		<div class="form-group">
+			<label for="employee-name">Employee Name</label>
+			<input type="text" class="form-control" id="employee-name" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="employee-role">Role</label>
+			<input type="text" class="form-control" id="employee-role" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="employee-start-date">Start Date</label>
+			<input type="date" class="form-control" id="employee-start-date" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="employee-rate">Rate</label>
+			<input type="number" class="form-control" id="employee-rate" placeholder="">
+		</div>
+	 	<button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+</section>
+
+
+
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
+	<!-- Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<!-- Bootstrap 4.0 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="apps.js"></script>
+	
+</body>
+</html>
